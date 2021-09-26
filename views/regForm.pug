@@ -1,0 +1,36 @@
+doctype html 
+html(lang="eng")
+  head
+    title Register Page
+    meta(name='description', content='Preparing Personal Portfolio')
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+  header
+    h1(style="text-align: center;") Register To Continue And Know More About Us!
+    div(style="text-align: center;border-top: 20px") Welcom to Nanas_sv Production Base organization (NPO).
+    br
+    br
+  body(style="background-color: palevioletred;")
+    div.form-section
+      form(action="/register" method="post")
+        div
+          label Username
+          br
+          input(type="text", name="username", required)
+          br
+        div
+          label Email
+          br
+          input(type="email", name="email", required)
+          br
+        div
+          label Password
+          br
+          input(type="password", name="password", required)
+        div
+          input(type="submit", value="register")
+  div.login-instead
+    p I Have Account! Login Instead.
+    a(href="/login") login
+        

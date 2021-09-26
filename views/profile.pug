@@ -1,0 +1,61 @@
+doctype html
+html(lang="eng")
+   head
+    title nanas personal portfolio
+    script.
+      document.addEventListener('DOMContentLoaded', function() {
+        var sellct = document.querySelector('h1');
+        var sellctReg = document.querySelector('h2');
+        var sellctlogout = document.querySelector('h3');
+        var sellctEmail = document.querySelector('h5');
+          setTimeout(function() {
+            sellct.remove();
+            sellctlogout.remove();
+              }, 3000); 
+          setTimeout(function(){
+            sellctReg.remove();
+              }, 30000);    
+                });
+    meta(name='description', content='Profile')
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='/public/style.css')
+    header 
+    div.profile-picture
+      img(src="./uploads" style="height: 100px; width: 100px")
+      br
+      form(action="upload.php", method="POST", enctype="multipart/form-data")
+        input(type="file", id="file", name="file")
+        br
+        input(type="submit", value="upload")
+        br
+        br
+    h1.center#welcome #{login}
+    h2.center#register #{register}
+    h3.center#logout #{email}
+    br
+    body(style="background-color: palevioletred; padding-left: 2.5%")
+    h4.border(style="font-style: italic; font-size: 25px") Request For A Leave
+     br
+     form(action="/leave-req" method="post" style="padding-top: 5%")
+      div.staff-Id
+        label(for="staff" style="font-style: italic; font-size: 16px") staff Id
+        br
+        input(type="text", id="staff", name="staff" required)
+        br
+      label(for="manager" style="font-style: italic; font-size: 16px") choose manager
+      div.managers
+        select(name="manager", id="manager" required)
+          option(selected, style="font-style: italic; font-size: 16px", disabled) Select a Manager
+          option(value="aondochrisdshark@gmail.com", name="aondochrisdshark@gmail.com")  firstMngr
+          option(value="secMngr", name="secMngr")      secMngr
+          option(value="thirdMngr", name="thirdMngr")  thirdMngr
+          option(value="fouthMngr", name="fouthMngr")  fouthMngr
+          br
+      div.text-field
+        textarea(type="text", id="message" name="message" placeholder="Type Reasons Here" required)
+        br
+        input(type="submit" value="submit")
+        br
+   a(href="/logout") logout;

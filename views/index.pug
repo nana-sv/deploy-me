@@ -1,0 +1,81 @@
+doctype html 
+html(lang="eng")
+  head
+    title  Page
+    script.
+      document.addEventListener('DOMContentLoaded', function() {
+        var sellctlogout = document.querySelector('h1');
+          setTimeout(function() {
+            sellctlogout.remove();
+              }, 3000); 
+                });
+    meta(name='description', content='Preparing Personal Portfolio')
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css")
+    script( src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+    script( src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js")
+  div.allHead(style="border-bottom-height: 3000%; border-width: .1px;")
+    h1.logout(style="font-style: italic; text-color: red; font-family: muli italic, sans-serif;")  #{logout}
+    div.container
+      div.jumbotron
+        nav.navbar.navbar-inverse
+           div.container-fluid
+             div.navbar-header
+                button.navbar-toggle(type="button" data-toggle="collapse" data-target="#myNavbar")
+                  span.icon-bar
+                  span.icon-bar
+                  span.icon-bar            
+                a.navbar-brand(href="/") linksbar
+             div#myNavbar.collapse.navbar-collapse
+                ul.nav.navbar-nav
+                  li.active
+                    a(href="/") Home
+                  li
+                    a(href="/") page1 
+        h2(style="text-align: center; ") Nanas_sv Leave Request Presentation
+        p(style="text-align: center; ") motor: Victory is Determination and Hard Work!!
+  body(style="text-align: center; padding-top: 2%; background-color: none;")
+    div.container(style="border-top: none")
+      div#myCarousel.carousel.slide(data-ride="carousel")
+        ol.carousel-indicators
+          li.active(data-target="#myCarousel" data-slide-to="0")
+          li(data-target="#myCarousel" data-slide-to="1")
+          li(data-target="#myCarousel" data-slide-to="2")
+        div.carousel-inner
+          div.item.active.center
+            img(src="https://cdn.glitch.com/34e924cd-c1b6-43f5-9142-4acf8cf7d4de%2Fofficelaptop.jpg?v=1631890061113" alt="a man seat with laptop on the table")
+          div.item
+            img(src="https://cdn.glitch.com/34e924cd-c1b6-43f5-9142-4acf8cf7d4de%2Fimages.jpg?v=1631893323811" alt="a man laughing with laptop on his laps")
+          div.item
+            img(src="https://cdn.glitch.com/34e924cd-c1b6-43f5-9142-4acf8cf7d4de%2Ftyping.jpg?v=1631890080226" alt="a man operating laptop with his head down")
+        a.left.carousel-control(href="#myCarousel" data-slide="prev")
+          span.glyphicon.glyphicon-chevron-left
+          span.sr-only previous
+        a.right.carousel-control(href="#myCarousel" data-slide="next")
+          span.glyphicon.glyphicon-chevron-right
+          span.sr-only next
+    br
+    div.form-type(style="text-align: right; padding-right: 5%; padding-top: 5%")
+      label.info Please Register With Us!
+      br
+      div.form-links(style="text-align: inherit; padding-right: 10%")
+        a(href="/register") register
+        br
+        div(style="padding-left: 50%")
+          a(href="/login") login
+    div.container(style="text-align: justify; padding-top: 6%;")
+      blockquote
+        p.
+          For 50 years, Nanas_sv Production Base Organization (NPBO), have been on manual leave request base approach. 
+          This slow down must of our activities, by the organization [CEO] authorithy, we have modenize our system.
+          You can now seat at home and be inform, request for a leave, register and login. We also extends our Organization globally now at [www.nanas_svleaverequest.com].
+            
+  footer.about-author(style="text-align: left; padding-left: 5%; padding-top: 4%; font-size: 12px")
+    div.about
+      a(href="/about") about Nanas_sv Leave Request
+      br
+      span All rights reserved &copy.
+      br
+      br

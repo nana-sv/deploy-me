@@ -1,0 +1,30 @@
+doctype html
+html
+  head
+    title Login Page
+    meta(name='description', content='Preparing Personal Portfolio')
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+  header(style="padding-bottom: 7%")
+    h1 Login With Your Correct Email And Password
+  body(style="background-color: palevioletred;")
+    .login-form
+      form(action="/login" method="post")
+        div.input-field
+          label email 
+          br
+          input(type="email", name="email", placeholder="email/username", required) 
+          br
+        div.input-field
+          label password
+          br
+          input(type="password", name="password", placeholder=" password her" required)
+          br
+          input(type="submit", value="login")
+          br
+    div.registration(style="padding-top: 5%")
+      span Not Registered?? click register below
+      br
+      a(href="/register") register
+  
