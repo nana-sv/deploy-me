@@ -31,7 +31,7 @@ const sessionStore = new MemoryStore({
 
 app.use(
 session({
-  secret: process.env.SESSION_SECRET,
+  secret: 'somevalue',
   resave: true,
   saveUninitialized: true,
     key: "express.sid",
