@@ -31,13 +31,13 @@ const sessionStore = new MemoryStore({
 
 app.use(
 session({
-  secret: 'somevalue',
+  secret: "somevalue",
   resave: true,
   saveUninitialized: true,
     key: "express.sid",
   store: sessionStore,  
 }));
-//
+//initialize passport
 app.use(passport.initialize());
 app.use(passport.session());
 //use routes function 
