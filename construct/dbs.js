@@ -1,17 +1,16 @@
 const mongoose = require("mongoose");
-
-module.exports = async function dbInitiation() {
+var database =  'mongodb+srv://passreqformapp:ruthtersoor090@cluster0.fs4s4.mongodb.net/personalportfolio?retryWrites=true&w=majority';
+module.exports = async () => {
   console.log("connecting to mongodb Atlas");
   try {
-    await mongoose.connect(process.env.MONG0DB_URI, {
+    await mongoose.connect(database, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useFindAndModify: false,
       useCreateIndex: true
     });
     console.log("server connect mongodb to: ", process.env.MONG0DB_URI);
-  } catch (e) {
-    throw e;
-    return e;
+  }catch(error){
+    throw error;
   }
 };
